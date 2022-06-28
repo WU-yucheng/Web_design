@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* 中文語系，一定要在第一行 */
+
+body{
+    background: url(images/bg.jpg); /* body的背景圖片，background-image接url()，預設為無限拼貼 */
+    width: 980px; /* 寬度 */
+    margin: 0 auto; /* 對齊置中的一種方法 */
+}
