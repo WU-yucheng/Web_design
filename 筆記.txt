@@ -1,0 +1,11 @@
+2022/06/30
+
+html:
+新增 menu 的按鈕
+menu 按鈕加入超連結
+加入文案
+
+css:
+float 排版，用在 menu 的 btn
+float 排版需要注意 'float: clear'，可以將全部的 div 設為 'float: leaft'
+image 預設為行內元素，可以用 'display: block' 改變
