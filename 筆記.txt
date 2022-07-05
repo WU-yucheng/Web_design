@@ -1,11 +1,15 @@
-2022/06/30
+2022/07/05
 
 html:
-新增 menu 的按鈕
-menu 按鈕加入超連結
-加入文案
+整理文案排版
+ol 有序list
+ul 無序list
+頁尾copyright 寫法：&copy;
+超連結如是連到外部網站通常會額外開一個分頁 target="_blank"
 
 css:
-float 排版，用在 menu 的 btn
-float 排版需要注意 'float: clear'，可以將全部的 div 設為 'float: leaft'
-image 預設為行內元素，可以用 'display: block' 改變
+float 排版需要注意，若要置中，需要先將 div 展開
+Hex 色碼可以將成對且重複的簡寫，例如：#112233 -> #123
+margin 框外距離
+padding 框內距離
+border 框

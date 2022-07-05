@@ -23,4 +23,11 @@ div{
     width: 460px;
     margin: 15px;
 }
+
+.foot{
+    width: 100%;
+    text-align: center;
+    border-top: 2px #000 dotted;
+    padding-top: 20px;
+}
 /* ---------------------------------------------------------------------- */
