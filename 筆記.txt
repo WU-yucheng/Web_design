@@ -1,8 +1,14 @@
-2022/07/24
+2022/07/12
+理論講解
 
+final report進度
 html:
-新增其他 html 分頁
-嵌入 youtube、google map、google 表單、FB
-address 標籤，預設字體為斜體
-
+index
+    menu
+    background
+    btn of R&L
+news
+skill
+talk
 css:
+a lot
