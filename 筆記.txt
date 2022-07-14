@@ -1,14 +1,12 @@
-2022/07/12
-理論講解
+2022/07/14
 
-final report進度
+flower
+
 html:
-index
-    menu
-    background
-    btn of R&L
-news
-skill
-talk
+use html5 to be the structure of code
+
+add header
+    nav
+use list to be the btn of nav
+
 css:
-a lot
