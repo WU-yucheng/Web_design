@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* 中文語系，一定要在第一行 */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+}
+
+body{
+    background-color: #ece1e8;
+}
+
+nav ul{
+    list-style: none;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+}
+
+.icon li{
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+
+.icon_fb{
+    background-image: url(images/icon-fb.svg);
+    /* background-size: 100%; This is for jpg, png, gif etc., svg already set in deaflut */
+}
+
+.icon_fb:hover{
+    background-image: url(images/icon-fb-hover.svg);
+}
+
+.icon_ig{
+    background-image: url(images/icon-ig.svg);
+}
+
+.icon_ig:hover{
+    background-image: url(images/icon-ig-hover.svg);
+}
+
+.icon_line{
+    background-image: url(images/icon-line.svg);
+}
+
+.icon_line:hover{
+    background-image: url(images/icon-line-hover.svg);
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.menu a{
+    color: #666;
+    text-decoration: none;
+}

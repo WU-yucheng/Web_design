@@ -1,12 +1,26 @@
-2022/07/14
-
+2022/07/19
+(# mean the wrods were recored last class)
 flower
 
 html:
-use html5 to be the structure of code
+# use html5 to be the structure of code
 
-add header
-    nav
-use list to be the btn of nav
+# add header
+#     nav
+# use list to be the btn of nav
+
+add class to 'nav ul'
+add class to 'nav ul li' 
 
 css:
+set UTF-8
+set all margin & padding to 0
+
+header & ul flex to let logo & navigation display flex
+li deafult display is list-item, so need to set 'display block'
+
+use father container '.icon' to set the blank area between icons. can use margin to set child
+icon_fb & icon_ig & icon_line use 'background-image', because will use 'hover' later to change the image
+add ':hover' after the selector can set the effect when mouse hover the area
+
+'.menu' use the similar skill with '.icon'
