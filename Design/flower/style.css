@@ -5,13 +5,32 @@
     margin: 0;
     padding: 0;
 }
+/* 共用顏色 */
+.lightblue{
+    background-color: #ECF5FF;
+}
 
-header{
-    display: flex;
+.lightgreen{
+    background-color: #dfefde;
 }
 
 body{
     background-color: #ece1e8;
+    font-family:
+    /*⻄⽂*/-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+    /*中⽂*/"PingFang TC", "Noto Sans TC", "⿊體-繁", "Heiti TC", "微軟正⿊體","Microsoft JhengHei", sans-serif;
+}
+
+#topbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 nav ul{
@@ -22,6 +41,7 @@ nav ul{
     display: flex;
     justify-content: space-between;
     width: 130px;
+    margin-bottom: 20px;
 }
 
 .icon li{
@@ -58,10 +78,26 @@ nav ul{
 .menu{
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    width: 485px;
+}
+
+.menu li{
+    padding: 5px 15px;
+    border: 1px solid transparent;
+}
+
+.menu li:hover{
+    border: 1px solid #666;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .menu a{
     color: #666;
     text-decoration: none;
+}
+
+/* main */
+
+section{
+    height: 100vh;
 }
