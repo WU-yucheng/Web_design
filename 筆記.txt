@@ -1,39 +1,41 @@
-2022/07/21
+2022/07/26
 (# mean the wrods were recored last class)
 flower
 
 html:
-# add class to 'nav ul'
-# add class to 'nav ul li' 
 
-add 'main'
-for the 'section' in 'main', add id, respectively (use id for jQuery)
-'section id="banner"', add 'header' and 'figure'
-    add 'h3' and 'h2' in 'header'
-    add 'img' in 'figure'
-    give color by 'class' to corresponding section
+# add 'main'
+# for the 'section' in 'main', add id, respectively (use id for jQuery)
+# 'section id="banner"', add 'header' and 'figure'
+#     add 'h3' and 'h2' in 'header'
+#     add 'img' in 'figure'
+#     give color by 'class' to corresponding section
+
+the 'section' in 'main':
+    '#news':
+        add 'h2', 'div'
+        the 'div' content 'figure', 'h2', and an 'a' in 'p'
+        use 'lorem' to generate fake words to fill the page
 
 css:
-# set UTF-8
-# set all margin & padding to 0
 
-# header & ul flex to let logo & navigation display flex
-# li deafult display is list-item, so need to set 'display block'
-
-# use father container '.icon' to set the blank area between icons. can use margin to set child
-# icon_fb & icon_ig & icon_line use 'background-image', because will use 'hover' later to change the image
-# add ':hover' after the selector can set the effect when mouse hover the area
-
-# '.menu' use the similar skill with '.icon'
-
-set the font-family to body, the setting has Chinese and English style
-'header' in 'body' give a id selector 'topbar'
-'.menu li' give border and padding for ':hover', when hover let border show also background
-'header' give 'margin', and 'justify-content: space-between' to separate 'h1' and 'nav'
+# set the font-family to body, the setting has Chinese and English style
+# 'header' in 'body' give a id selector 'topbar'
+# '.menu li' give border and padding for ':hover', when hover let border show also background
+# 'header' give 'margin', and 'justify-content: space-between' to separate 'h1' and 'nav'
  
-for element in the 'nav':
-    first, set 'display: flex' for the father element 'nav'
-    second, set 'flex-direction' to change the main axis of 'nav
-    third, to align the child elements, set 'align-items: flex-end'
+# for element in the 'nav':
+#     first, set 'display: flex' for the father element 'nav'
+#     second, set 'flex-direction' to change the main axis of 'nav
+#     third, to align the child elements, set 'align-items: flex-end'
 
-add 'lightblue' & 'lightgreen' for the generic color
+# add 'lightblue' & 'lightgreen' for the generic color
+
+a way to import google font '@import' need to write after '@charset'
+'@font-face' can use costum 'font-family', but need to upload the font file
+set 'img' width always 100%
+the 'section' in 'main':
+    '#banner' give the 'display: flex', and 'justify-content: space-between' to separate 'header' and 'figure'
+    add 'h2' & 'h3' style
+
+    '#news' give a class 'title' for 'h2'
