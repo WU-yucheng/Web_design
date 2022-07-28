@@ -1,5 +1,5 @@
 @charset "UTF-8"; /* 中文語系，一定要在第一行 */
-@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Noto+Sans+TC:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Noto+Sans+TC&display=swap');
 @font-face {
     font-family: PinkyPromise;
     src: url(webfont/Pinky\ Promise.otf);
@@ -8,6 +8,7 @@
 *{
     margin: 0;
     padding: 0;
+    font: inherit;
 }
 /* 共用顏色 */
 .lightblue{
@@ -108,14 +109,19 @@ nav ul{
 
 section{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* main banner */
 
 #banner{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     color: rgb(48, 48, 48);
+    height: 100vh;
 }
 
 #banner header{
@@ -127,12 +133,14 @@ section{
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 3rem;
     letter-spacing: .3rem;
+    /* font-weight: 400; */
 }
 
 #banner h3{
     font-family: 'Edu VIC WA NT Beginner', cursive;
     font-size: 2rem;
     letter-spacing: .2rem;
+    /* font-weight: 100; */
 }
 
 #banner figure{
@@ -148,4 +156,51 @@ section{
     font-size: 2rem;
     border-top: #666 5px solid;
     padding: 15px 10px;
+    margin: 30px 0;
+}
+
+.box_lst{
+    display: flex;
+    width: 80%;
+}
+
+.box_lst article{
+    height: 75vh;
+    flex: 1;
+    margin: 0 15px;
+    box-shadow: 1px 1px 20px rgb(177, 177, 177);
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+#news figure{
+    height: 60%;
+    overflow: hidden;
+}
+
+#news figure img{
+    /* width: 100%; already write on top so can skip*/ 
+    height: 100%;
+    object-fit: cover;
+}
+
+#news h2{
+    font-size: 2rem;
+    padding: 5px 25px;
+}
+
+#news p{
+    padding: 5px 25px;
+}
+
+#news a{
+    color: #666;
+    text-decoration: none;
+    text-align: justify;
+    /* 以下為多行省略必備 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
 }
