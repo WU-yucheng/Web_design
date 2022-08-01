@@ -34,7 +34,3 @@ the image can use 'overflow: hidden' to cut the area overflow
 the 'img' in '#news figure' give 'object-fit: cover' to set the image align to center, it must to write 'overflow: hidden' in its father
 edit the style of 'h2', 'p', and 'a'
 !!! '#news a' use 'display: -webkit-box', it a experimental function by browse, it is not CSS standard yet
-
-final report
-
-rewrite

@@ -1,0 +1,2 @@
+2022/08/01
+新增 guides, introduction, news 的 html, 並依照 figma 上的 wireframe 寫入相對應的元素

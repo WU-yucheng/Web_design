@@ -1,0 +1,33 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+
+}
+
+div{
+    background-color: blue;
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+    color: #FFF;
+}
+
+
+.one{
+    background-color: black;
+}
+
+.two{
+    background-color: red;
+}
+
+
+.one, .two{
+    background-color: green;
+}
