@@ -164,7 +164,7 @@ section{
     width: 80%;
 }
 
-.box_lst article{
+.box_lst article, .box_lst>div{
     height: 75vh;
     flex: 1;
     margin: 0 15px;
@@ -203,4 +203,77 @@ section{
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 6;
+}
+
+/* main service */
+.box_lst>div{
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.item1{
+    background-image: url(images/pt_svc1.jpg);
+}
+
+.item2{
+    background-image: url(images/pt_svc2.jpg);
+}
+
+.item3{
+    background-image: url(images/pt_svc3.jpg);
+}
+
+.item4{
+    background-image: url(images/pt_svc4.jpg);
+}
+
+.txt_col{
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.txt_col h2{
+    color: #FFF;
+    font-size: 1.3rem;
+    padding: 5px 20px;
+}
+
+.txt_col p{
+    color: #FFF;
+    padding: 0 20px 15px;
+    /* 以下為單行省略 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.txt_col a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* main about */
+
+#about{
+    background-image: url(images/pt_about.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#about>div{
+    background-color: rgba(250, 209, 250, 0.5);
+    width: 65%;
+    text-align: center;
+}
+
+#about .title{
+    display: inline-block;
+}
+
+#about p{
+    text-align: left;
 }
