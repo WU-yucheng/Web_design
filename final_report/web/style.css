@@ -1,4 +1,137 @@
 @charset "UTF-8";
 /* 中文語系，一定要在第一行 */
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 變數 */
+:root{
+    --color_font: #fff;
+}
+/* index */
+/* 給導覽列 */
+.hidden{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-size: 2em;
+    color: var(--color_font);
+    transition: all .3s;
+}
+/* 導覽列在滑鼠移上去時展開的效果 */
+.hidden:hover{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-size: 3em;
+    color: var(--color_font);
+}
+/* 導覽列在滑鼠移上去時裡面文字顯示 */
+.hidden:hover .side_bar ul li a{
+    position: relative;
+    color: var(--color_font);
+}
+/* 導覽列顏色 */
+.hidden a{
+    color: var(--color_font);
+    text-decoration: none;
+}
+/* 導覽列文字部分 */
+.side_bar{
+    width: 100px;
+    height: 50%;
+}
 
+.side_bar ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.side_bar ul li a{
+    position: absolute;
+    top: 0%;
+    color: rgba(0, 0, 0, 0);
+}
+/* 首頁主要區域 */
+.main{
+    display: flex;
+}
+/* 主要區域的排版 */
+.main section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 20%;
+}
+/* 主要區域標題 */
+.main section h1{
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0);
+    transition-property: all;
+    transition: ease .3s;
+}
+/* 主要區域滑鼠滑上時，才會顯示 */
+.main section:hover h1{
+    margin-top: 20px;
+    color: var(--color_font);
+}
+/* 遊戲種類一 */
+#game_style_1{
+    background: #ac3b3f;
+    transition-property: all;
+    transition: ease .5s;
+}
+
+#game_style_1:hover{
+    background: #FF595E;
+    width: 200%;
+}
+/* 遊戲種類二 */
+#game_style_2{
+    background-color: #E5B534;
+    transition-property: all;
+    transition: ease .5s;
+}
+
+#game_style_2:hover{
+    background-color: #FFCA3A;
+    width: 200%;
+}
+/* 遊戲種類三 */
+#game_style_3{
+    background-color: #527816;
+    transition-property: all;
+    transition: ease .5s;
+}
+
+#game_style_3:hover{
+    background-color: #8AC926;
+    width: 200%;
+}
+/* 遊戲種類四 */
+#game_style_4{
+    background-color: #14689C;
+    transition-property: all;
+    transition: ease .5s;
+}
+
+#game_style_4:hover{
+    background-color: #1982C4;
+    width: 200%;
+}
+/* 遊戲種類五 */
+#game_style_5{
+    background-color: #4A3566;
+    transition-property: all;
+    transition: ease .5s;
+}
+
+#game_style_5:hover{
+    background-color: #6A4C93;
+    width: 200%;
+}

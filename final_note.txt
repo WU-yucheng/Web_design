@@ -1,2 +1,5 @@
 2022/08/01
-新增 guides, introduction, news 的 html, 並依照 figma 上的 wireframe 寫入相對應的元素
+首頁增加 CSS 的樣式，主要：
+    main hover 的效果
+    nav hover 後展開
+    細節在 CSS 檔案註解
