@@ -1,36 +1,31 @@
-2022/08/04
+2022/08/09
 (# mean the wrods were recored last class)
 flower
 
 html:
-# add a 'div' content 'h2' & 'p'
-add a 'video' element in 'main #banner'
-for 'section id="video"', add a 'h2' & 'video' in 'div'
+# add a 'video' element in 'main #banner'
+# for 'section id="video"', add a 'h2' & 'video' in 'div'
 
 css:
-# use ',' in css means 'or'
-# use '>' in css can only set first layer of child element
-# css3 has a new function call 'opacity', it can set only alpha value, but will effect all child elements
+# for the 'video' in '#banner', give 'position: absolute' & 'width' for 'topbar'
+# set '#banner video' style to add video
 
-# the first layer 'div' in 'service' write with the 'article' in 'news' because the property are same
-# the background of 'div' in 'service' use 'background-image' to set
-# set 'background-size: cover' & 'background-position: center' to '.box_lst>div'
-# add 'txt_col' to set the 'background-color' for text in 'service'
-# set 'txt_col' 'position: absolute', if use it, the father element need to set 'position'
-# set 'txt_col' 'bottom' & 'left'
-# set 'h2', 'a', and 'p' style in 'txt_col'
-# 'white-space: nowrap' can froce text fix in only one line
-
-# for '#about', set '#about>div' style
-# '#about .title' set 'display: inline-block', let the 'border-top' length of 'title' fix with 'h2' words length
-
-for the 'video' in '#banner', give 'position: absolute' & 'width' for 'topbar'
-set '#banner video' style to add video
-
-for '#video>div' & 'video', set 'width' & 'height'
+# for '#video>div' & 'video', set 'width' & 'height'
 
 form.html
 
-add search form
-add account form
-style attributes in elements of form may different, suggest use css to set style
+# add search form
+# add account form
+# style attributes in elements of form may different, suggest use css to set style
+
+add password, password_check, name, ID_number, email and phone input text
+add brithday, type = date
+add type select for gender
+add member type by type = radio
+add checkbox for multiple selections
+add textarea for long text input
+add reset and submit button
+
+use 'fieldset' to replace 'radio' for html5
+for same group of selection in 'fieldset', use same attribute: 'name', but different 'id'
+attribute: 'for' will find attribute: 'id'

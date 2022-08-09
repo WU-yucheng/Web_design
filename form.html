@@ -1,23 +1,89 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>表單格式</title>
+  <meta charset="utf-8">
+  <title>基本表單</title>
 </head>
 
 <body>
-<form id="src_form" name="src_form" method="post">
-	<label for="search">搜尋：</label>
-	<input type="search" name="search" id="search">
-	<input type="button" name="src_btn" id="src_btn" value="搜尋">
-</form>
-<hr>
-<h2>會員資料修改</h2>
-<form id="member_form" name="member_form" method="post">
-  <label for="textfield">帳號：</label>
-  <input type="text" name="account" id="account" style="width: 100px">
-	
-</form>
+  <form id="search_form" name="search_form" method="post">
+    <label for="search">搜尋:</label>
+    <input type="search" name="search" id="search">
+    <input type="button" name="search_btn" id="search_btn" value="搜尋">
+  </form>
+  <hr>
+  <h2>會員資料修改</h2>
+  <p>「*」 為必填</p>
+  <form id="member_form" name="member_form" method="post">
+    <p>
+      <label for="account">*帳號:</label>
+      <input name="account" type="text" required="required" id="account" autocomplete="off" size="15">
+    </p>
+    <p>
+      <label for="password">*密碼：</label>
+      <input name="password" type="password" required="required" id="password" size="15">
+    </p>
+    <p>
+      <label for="password_check">*確認密碼：</label>
+      <input name="password_check" type="password" required="required" id="password_check" size="15">
+    </p>
+    <p>
+      <label for="name">*姓名：</label>
+      <input name="name" type="text" required="required" id="name" size="15">
+    </p>
+    <p>
+      <label for="ID_number">身分證字號：</label>
+      <input name="ID_number" type="text" id="ID_number" size="15" maxlength="10">
+    </p>
+    <p>
+      <label for="email">電子信箱：</label>
+      <input type="email" name="email" id="email">
+    </p>
+    <p>
+      <label for="tel">連絡電話：</label>
+      <input type="tel" name="tel" id="tel">
+    </p>
+    <p>
+      <label for="brithday">生日：</label>
+      <input type="date" name="brithday" id="brithday">
+    </p>
+    <p>
+      <label for="select">性別：</label>
+      <select name="gender" required="required" id="gender">
+        <option value="none">請選擇</option>
+        <option value="m">生理男</option>
+        <option value="f">生理女</option>
+      </select>
+    </p>
+    <p>
+      <label for="member">會員類型：</label>
+      <input type="radio" name="member" id="normal_member" value="一般會員">
+      <label for="normal_member">一般會員 </label>
+      <input type="radio" name="member" id="life_member" value="終生會員">
+      <label for="life_member">終生會員 </label>
+    </p>
+    <fieldset>
+	  <legend>婚姻狀態</legend>
+      <input type="radio" name="marriage" id="marriage_1" value="已婚">
+      <label for="normal_member">已婚 </label>
+      <input type="radio" name="marriage" id="marriage_0" value="未婚">
+      <label for="life_member">未婚 </label>
+  	</fieldset>
+	<fieldset>
+	  <legend>訂閱項目</legend>
+		  <label><input type="checkbox" name="CheckboxGroup1" value="社會" id="CheckboxGroup1_0">社會</label>
+		  <label><input type="checkbox" name="CheckboxGroup1" value="國際" id="CheckboxGroup1_1">國際</label>
+		  <label><input type="checkbox" name="CheckboxGroup1" value="人文" id="CheckboxGroup1_2">人文</label>
+    </fieldset>
+    <label for="message">留言：</label>
+	  <textarea name="message" cols="50" rows="10"></textarea>
+    <p>
+      <input type="reset" name="reset" id="reset" value="重設資料">
+      <input type="submit" name="submit" id="submit" value="送出資料">
+    </p>
+  </form>
 
 </body>
+
 </html>
