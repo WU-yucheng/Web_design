@@ -1,31 +1,11 @@
-2022/08/09
-(# mean the wrods were recored last class)
+2022/08/11
+
 flower
 
 html:
-# add a 'video' element in 'main #banner'
-# for 'section id="video"', add a 'h2' & 'video' in 'div'
+add 'h2' & 'form' into 'contact', the content in 'form' use the componentin form.html
 
 css:
-# for the 'video' in '#banner', give 'position: absolute' & 'width' for 'topbar'
-# set '#banner video' style to add video
-
-# for '#video>div' & 'video', set 'width' & 'height'
-
-form.html
-
-# add search form
-# add account form
-# style attributes in elements of form may different, suggest use css to set style
-
-add password, password_check, name, ID_number, email and phone input text
-add brithday, type = date
-add type select for gender
-add member type by type = radio
-add checkbox for multiple selections
-add textarea for long text input
-add reset and submit button
-
-use 'fieldset' to replace 'radio' for html5
-for same group of selection in 'fieldset', use same attribute: 'name', but different 'id'
-attribute: 'for' will find attribute: 'id'
+give style to '#contact_form' and its child
+give 'form_item' to text block in '#contact_form'
+the 'button' in '#contact' use the style: https://codepen.io/Danil89/pen/MzrEdX

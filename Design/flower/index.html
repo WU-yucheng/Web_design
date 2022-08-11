@@ -191,7 +191,22 @@
                 <video src="images/Planter.mp4" controls loop poster="images/video.jpg"></video>
             </div>
         </section>
-        <section id="contact"></section>
+        <section id="contact">
+            <h2 class="title">CONTACT</h2>
+            <form name="contact_form" id="contact_form" method="post" action="">
+                <label for="name">*姓名：</label>
+                <input class="form_item" name="name" type="text" required="required" id="name" autocomplete="on" placeholder="王小明" title="請輸入姓名">
+                <label for="tel">連絡電話：</label>
+                <input class="form_item" type="tel" name="tel" id="tel" autocomplete="on" placeholder="02-1234-5678" title="請輸入電話">
+                <label for="email">*電子信箱：</label>
+                <input class="form_item" type="email" name="email" id="email" required="required" autocomplete="on" placeholder="flower@gmail.com" title="請輸入電子信箱">
+                <label for="message">留言：</label>
+                <textarea class="form_item" name="message" id="message" rows="10" title="請輸入留言"></textarea>
+                <button>
+                    <span>送出</span>
+                </button>
+            </form>
+        </section>
     </main>
 </body>
 

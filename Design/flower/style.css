@@ -1,36 +1,41 @@
-@charset "UTF-8"; /* 中文語系，一定要在第一行 */
+@charset "UTF-8";
+/* 中文語系，一定要在第一行 */
 @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Noto+Sans+TC&display=swap');
+
 @font-face {
     font-family: PinkyPromise;
     src: url(webfont/Pinky\ Promise.otf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     font: inherit;
 }
+
 /* 共用顏色 */
-.lightblue{
+.lightblue {
     background-color: #ECF5FF;
 }
 
-.lightgreen{
+.lightgreen {
     background-color: #dfefde;
 }
 
-body{
+body {
     background-color: #ece1e8;
     font-family:
-    /*⻄⽂*/-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
-    /*中⽂*/"PingFang TC", "Noto Sans TC", "⿊體-繁", "Heiti TC", "微軟正⿊體","Microsoft JhengHei", sans-serif;
+        /*⻄⽂*/
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+        /*中⽂*/
+        "PingFang TC", "Noto Sans TC", "⿊體-繁", "Heiti TC", "微軟正⿊體", "Microsoft JhengHei", sans-serif;
 }
 
-img{
+img {
     width: 100%;
 }
 
-#topbar{
+#topbar {
     position: absolute;
     width: 90%;
     display: flex;
@@ -38,78 +43,78 @@ img{
     margin: 40px;
 }
 
-nav{
+nav {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-nav ul{
+nav ul {
     list-style: none;
 }
 
-.icon{
+.icon {
     display: flex;
     justify-content: space-between;
     width: 130px;
     margin-bottom: 20px;
 }
 
-.icon li{
+.icon li {
     display: block;
     width: 35px;
     height: 35px;
 }
 
-.icon_fb{
+.icon_fb {
     background-image: url(images/icon-fb.svg);
     /* background-size: 100%; This is for jpg, png, gif etc., svg already set in deaflut */
 }
 
-.icon_fb:hover{
+.icon_fb:hover {
     background-image: url(images/icon-fb-hover.svg);
 }
 
-.icon_ig{
+.icon_ig {
     background-image: url(images/icon-ig.svg);
 }
 
-.icon_ig:hover{
+.icon_ig:hover {
     background-image: url(images/icon-ig-hover.svg);
 }
 
-.icon_line{
+.icon_line {
     background-image: url(images/icon-line.svg);
 }
 
-.icon_line:hover{
+.icon_line:hover {
     background-image: url(images/icon-line-hover.svg);
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: space-between;
     width: 485px;
 }
 
-.menu li{
+.menu li {
     padding: 5px 15px;
     border: 1px solid transparent;
 }
 
-.menu li:hover{
+.menu li:hover {
     border: 1px solid #666;
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-.menu a{
+.menu a {
     color: #666;
     text-decoration: none;
 }
 
 /* main */
 
-section{
+section {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -118,7 +123,7 @@ section{
 
 /* main banner */
 
-#banner{
+#banner {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -126,31 +131,31 @@ section{
     height: 100vh;
 }
 
-#banner header{
+#banner header {
     align-self: center;
     padding-left: 15%;
 }
 
-#banner h2{
+#banner h2 {
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 3rem;
     letter-spacing: .3rem;
     /* font-weight: 400; */
 }
 
-#banner h3{
+#banner h3 {
     font-family: 'Edu VIC WA NT Beginner', cursive;
     font-size: 2rem;
     letter-spacing: .2rem;
     /* font-weight: 100; */
 }
 
-#banner figure{
+#banner figure {
     width: 45%;
     align-self: flex-end;
 }
 
-#banner video{
+#banner video {
     position: absolute;
     z-index: -1;
     object-fit: cover;
@@ -161,7 +166,7 @@ section{
 
 /* main news */
 
-.title{
+.title {
     font-family: PinkyPromise;
     text-align: center;
     font-size: 2rem;
@@ -170,12 +175,13 @@ section{
     margin: 30px 0;
 }
 
-.box_lst{
+.box_lst {
     display: flex;
     width: 80%;
 }
 
-.box_lst article, .box_lst>div{
+.box_lst article,
+.box_lst>div {
     height: 75vh;
     flex: 1;
     margin: 0 15px;
@@ -184,27 +190,27 @@ section{
     border-radius: 25px;
 }
 
-#news figure{
+#news figure {
     height: 60%;
     overflow: hidden;
 }
 
-#news figure img{
-    /* width: 100%; already write on top so can skip*/ 
+#news figure img {
+    /* width: 100%; already write on top so can skip*/
     height: 100%;
     object-fit: cover;
 }
 
-#news h2{
+#news h2 {
     font-size: 2rem;
     padding: 5px 25px;
 }
 
-#news p{
+#news p {
     padding: 5px 25px;
 }
 
-#news a{
+#news a {
     color: #666;
     text-decoration: none;
     text-align: justify;
@@ -217,29 +223,29 @@ section{
 }
 
 /* main service */
-.box_lst>div{
+.box_lst>div {
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
-.item1{
+.item1 {
     background-image: url(images/pt_svc1.jpg);
 }
 
-.item2{
+.item2 {
     background-image: url(images/pt_svc2.jpg);
 }
 
-.item3{
+.item3 {
     background-image: url(images/pt_svc3.jpg);
 }
 
-.item4{
+.item4 {
     background-image: url(images/pt_svc4.jpg);
 }
 
-.txt_col{
+.txt_col {
     background-color: rgba(0, 0, 0, .4);
     width: 100%;
     position: absolute;
@@ -247,13 +253,13 @@ section{
     left: 0;
 }
 
-.txt_col h2{
+.txt_col h2 {
     color: #FFF;
     font-size: 1.3rem;
     padding: 5px 20px;
 }
 
-.txt_col p{
+.txt_col p {
     color: #FFF;
     padding: 0 20px 15px;
     /* 以下為單行省略 */
@@ -262,30 +268,30 @@ section{
     white-space: nowrap;
 }
 
-.txt_col a{
+.txt_col a {
     color: #FFF;
     text-decoration: none;
 }
 
 /* main about */
 
-#about{
+#about {
     background-image: url(images/pt_about.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
-#about>div{
+#about>div {
     background-color: rgba(250, 209, 250, 0.5);
     width: 65%;
     text-align: center;
 }
 
-#about .title{
+#about .title {
     display: inline-block;
 }
 
-#about p{
+#about p {
     text-align: left;
     height: 75vh;
     overflow: auto;
@@ -294,11 +300,115 @@ section{
 
 /* main video */
 
-#video>div{
+#video>div {
     width: 75%;
     height: 100vh;
 }
 
-video{
+video {
     width: 100%;
+}
+
+/* main contact */
+
+#contact_form {
+    width: 35%;
+}
+
+#contact_form * {
+    width: 100%;
+}
+
+#contact_form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: none;
+}
+
+.form_item {
+    border: #926080 solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+button {
+    /* position: relative; */
+    /* outline: none; */
+    /* text-decoration: none; */
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* text-transform: uppercase; */
+    height: 60px;
+    width: 210px !important;
+    /* opacity: 1; */
+    background-color: #ffffff;
+    border: 1px solid #926080;
+    margin: 15px auto;
+}
+
+button span {
+    color: #926080;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+}
+
+button:hover {
+    animation: rotate 0.7s ease-in-out both;
+}
+
+button:hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes storm {
+    0% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+
+    25% {
+        transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+
+    50% {
+        transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+
+    75% {
+        transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
 }
