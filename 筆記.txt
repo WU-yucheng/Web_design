@@ -1,11 +1,7 @@
 2022/08/11
 
-flower
+js_01_window_onload
 
-html:
-add 'h2' & 'form' into 'contact', the content in 'form' use the componentin form.html
-
-css:
-give style to '#contact_form' and its child
-give 'form_item' to text block in '#contact_form'
-the 'button' in '#contact' use the style: https://codepen.io/Danil89/pen/MzrEdX
+window.onload = function{} --> do the function in {} after loading DOM element
+document.getElementById() --> choose the id name in ()
+innerHTML --> cover the text
