@@ -1,7 +1,9 @@
-2022/08/11
+2022/08/16
 
-js_01_window_onload
+js_02_append
+before use jQuery or other library, always need to import library before add any jQuery code (<script src="jquery-3.6.0.min.js"></script>)
+if there are many libraries, suggest use 'var $j = jQuery.noConflict();' to replace dircetlly use '$()'
+$() --> $(document).ready, this function code will finish the loading of DOM then do the function
 
-window.onload = function{} --> do the function in {} after loading DOM element
-document.getElementById() --> choose the id name in ()
-innerHTML --> cover the text
+js_03_fading
+

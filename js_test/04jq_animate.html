@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animate動畫效果</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">動態加高</button>
+    <button id="btn2">動態還原</button>
+    <div></div>
+
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+
+        $(function(){
+
+            $("#btn1").click(function(){
+
+                $("div").animate({height:"600px"},3000);
+
+            });
+
+            $("#btn2").click(function(){
+
+                $("div").animate({height:"200px"},"slow");
+                
+            });
+
+        });
+
+
+    </script>
+</body>
+</html>
