@@ -59,14 +59,18 @@
 /* 首頁主要區域 */
 .main{
     display: flex;
+    background-color: rgb(30, 30, 30);
+    height: 100vh;
+    align-items: center;
 }
 /* 主要區域的排版 */
 .main section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    width: 20%;
+    height: 50vh;
+    flex: 1;
+    margin: 10px;
 }
 /* 主要區域標題 */
 .main section h1{
@@ -89,7 +93,6 @@
 
 #game_style_1:hover{
     background: #FF595E;
-    width: 200%;
 }
 /* 遊戲種類二 */
 #game_style_2{
@@ -100,7 +103,6 @@
 
 #game_style_2:hover{
     background-color: #FFCA3A;
-    width: 200%;
 }
 /* 遊戲種類三 */
 #game_style_3{
@@ -111,7 +113,6 @@
 
 #game_style_3:hover{
     background-color: #8AC926;
-    width: 200%;
 }
 /* 遊戲種類四 */
 #game_style_4{
@@ -122,7 +123,6 @@
 
 #game_style_4:hover{
     background-color: #1982C4;
-    width: 200%;
 }
 /* 遊戲種類五 */
 #game_style_5{
@@ -133,5 +133,4 @@
 
 #game_style_5:hover{
     background-color: #6A4C93;
-    width: 200%;
 }
