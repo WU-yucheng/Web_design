@@ -1,9 +1,6 @@
-2022/08/16
+2022/08/18
 
-js_02_append
-before use jQuery or other library, always need to import library before add any jQuery code (<script src="jquery-3.6.0.min.js"></script>)
-if there are many libraries, suggest use 'var $j = jQuery.noConflict();' to replace dircetlly use '$()'
-$() --> $(document).ready, this function code will finish the loading of DOM then do the function
+flower:
+add js file for flower.html
 
-js_03_fading
-
+add 04 & 05 js test

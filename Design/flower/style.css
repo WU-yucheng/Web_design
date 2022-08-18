@@ -65,7 +65,10 @@ nav ul {
     width: 35px;
     height: 35px;
 }
-
+.icon a {
+    display: block;
+    height: 35px;
+}
 .icon_fb {
     background-image: url(images/icon-fb.svg);
     /* background-size: 100%; This is for jpg, png, gif etc., svg already set in deaflut */
