@@ -9,6 +9,18 @@
 /* 變數 */
 :root{
     --color_font: #fff;
+    --color_background: rgb(40, 40, 40);
+    --color_none: rgba(0,0,0,0);
+    --color_main_1_light: #FF595E;
+    --color_main_1_dark: #d2363b;
+    --color_main_2_light: #FFCA3A;
+    --color_main_2_dark: #E5B534;
+    --color_main_3_light: #78ae22;
+    --color_main_3_dark: #527816;
+    --color_main_4_light: #1982C4;
+    --color_main_4_dark: #14689C;
+    --color_main_5_light: #6A4C93;
+    --color_main_5_dark: #4A3566;
 }
 /* index */
 /* 給導覽列 */
@@ -54,12 +66,12 @@
 .side_bar ul li a{
     position: absolute;
     top: 0%;
-    color: rgba(0, 0, 0, 0);
+    color: var(--color_none);
 }
 /* 首頁主要區域 */
 .main{
     display: flex;
-    background-color: rgb(30, 30, 30);
+    background-color: var(--color_background);
     height: 100vh;
     align-items: center;
 }
@@ -68,69 +80,69 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50vh;
+    height: 80vh;
     flex: 1;
     margin: 10px;
 }
 /* 主要區域標題 */
 .main section h1{
     margin-top: 20px;
-    color: rgba(0, 0, 0, 0);
+    color: var(--color_font );
     transition-property: all;
     transition: ease .3s;
 }
 /* 主要區域滑鼠滑上時，才會顯示 */
-.main section:hover h1{
+/* .main section h1{
     margin-top: 20px;
     color: var(--color_font);
-}
+} */
 /* 遊戲種類一 */
 #game_style_1{
-    background: #ac3b3f;
+    background: var(--color_main_1_dark);
     transition-property: all;
     transition: ease .5s;
 }
 
 #game_style_1:hover{
-    background: #FF595E;
+    background: var(--color_main_1_light);
 }
 /* 遊戲種類二 */
 #game_style_2{
-    background-color: #E5B534;
+    background-color: var(--color_main_2_dark);
     transition-property: all;
     transition: ease .5s;
 }
 
 #game_style_2:hover{
-    background-color: #FFCA3A;
+    background-color: var(--color_main_2_light);
 }
 /* 遊戲種類三 */
 #game_style_3{
-    background-color: #527816;
+    background-color: var(--color_main_3_dark);
     transition-property: all;
     transition: ease .5s;
 }
 
 #game_style_3:hover{
-    background-color: #8AC926;
+    background-color: var(--color_main_3_light);
 }
 /* 遊戲種類四 */
 #game_style_4{
-    background-color: #14689C;
+    background-color: var(--color_main_4_dark);
     transition-property: all;
     transition: ease .5s;
 }
 
 #game_style_4:hover{
-    background-color: #1982C4;
+    background-color: var(--color_main_4_light);
 }
 /* 遊戲種類五 */
 #game_style_5{
-    background-color: #4A3566;
+    background-color: var(--color_main_5_dark);
     transition-property: all;
     transition: ease .5s;
 }
 
 #game_style_5:hover{
-    background-color: #6A4C93;
+    background-color: var(--color_main_5_light);
 }
