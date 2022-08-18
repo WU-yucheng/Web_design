@@ -11,7 +11,7 @@ $(function () {
                     'flex': ''
                 });
                 $(step + ' *').hide();
-            // 點擊後判斷，未展開的打開，其他展開的收回並隱藏內容
+                // 點擊後判斷，未展開的打開，其他展開的收回並隱藏內容
             } else if ($(step).css('flex')) {
                 $('.init_expand').css({
                     'flex': ''
@@ -27,5 +27,12 @@ $(function () {
                 });
             }
         });
+    });
+});
+
+// 控制導覽列展開
+$(function () {
+    $('.bar').click(function () {
+        $('.hidden_bar').toggleClass('shown_bar')
     });
 });
